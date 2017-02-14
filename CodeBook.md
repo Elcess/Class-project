@@ -51,145 +51,282 @@ Although the data frame "xmeans" contains the complete dataset, five text files 
 From "variablestable.txt"
 
 variablename
- 1 activity
- 2 subjectID
- 3 tBodyAcc-mean()-X
- 4 tBodyAcc-mean()-Y
- 5 tBodyAcc-mean()-Z
- 6 tBodyAcc-std()-X
- 7 tBodyAcc-std()-Y
- 8 tBodyAcc-std()-Z
- 9 tGravityAcc-mean()-X
- 10 tGravityAcc-mean()-Y
- 11 tGravityAcc-mean()-Z
- 12 tGravityAcc-std()-X
- 13 tGravityAcc-std()-Y
- 14 tGravityAcc-std()-Z
- 15 tBodyAccJerk-mean()-X
- 16 tBodyAccJerk-mean()-Y
- 17 tBodyAccJerk-mean()-Z
- 18 tBodyAccJerk-std()-X
- 19 tBodyAccJerk-std()-Y
- 20 tBodyAccJerk-std()-Z
- 21 tBodyGyro-mean()-X
- 22 tBodyGyro-mean()-Y
- 23 tBodyGyro-mean()-Z
- 24 tBodyGyro-std()-X
- 25 tBodyGyro-std()-Y
- 26 tBodyGyro-std()-Z
- 27 tBodyGyroJerk-mean()-X
- 28 tBodyGyroJerk-mean()-Y
- 29 tBodyGyroJerk-mean()-Z
- 30 tBodyGyroJerk-std()-X
- 31 tBodyGyroJerk-std()-Y
- 32 tBodyGyroJerk-std()-Z
- 33 tBodyAccMag-mean()
- 34 tBodyAccMag-std()
- 35 tGravityAccMag-mean()
- 36 tGravityAccMag-std()
- 37 tBodyAccJerkMag-mean()
- 38 tBodyAccJerkMag-std()
- 39 tBodyGyroMag-mean()
- 40 tBodyGyroMag-std()
- 41 tBodyGyroJerkMag-mean()
- 42 tBodyGyroJerkMag-std()
- 43 fBodyAcc-mean()-X
- 44 fBodyAcc-mean()-Y
- 45 fBodyAcc-mean()-Z
- 46 fBodyAcc-std()-X
- 47 fBodyAcc-std()-Y
- 48 fBodyAcc-std()-Z
- 49 fBodyAccJerk-mean()-X
- 50 fBodyAccJerk-mean()-Y
- 51 fBodyAccJerk-mean()-Z
- 52 fBodyAccJerk-std()-X
- 53 fBodyAccJerk-std()-Y
- 54 fBodyAccJerk-std()-Z
- 55 fBodyGyro-mean()-X
- 56 fBodyGyro-mean()-Y
- 57 fBodyGyro-mean()-Z
- 58 fBodyGyro-std()-X
- 59 fBodyGyro-std()-Y
- 60 fBodyGyro-std()-Z
- 61 fBodyAccMag-mean()
- 62 fBodyAccMag-std()
- 63 fBodyBodyAccJerkMag-mean()
- 64 fBodyBodyAccJerkMag-std()
- 65 fBodyBodyGyroMag-mean()
- 66 fBodyBodyGyroMag-std()
- 67 fBodyBodyGyroJerkMag-mean()
- 68 fBodyBodyGyroJerkMag-std()
+
+1 activity
+
+2 subjectID
+
+3 tBodyAcc-mean()-X
+
+4 tBodyAcc-mean()-Y
+
+5 tBodyAcc-mean()-Z
+
+6 tBodyAcc-std()-X
+
+7 tBodyAcc-std()-Y
+
+8 tBodyAcc-std()-Z
+
+9 tGravityAcc-mean()-X
+
+10 tGravityAcc-mean()-Y
+
+11 tGravityAcc-mean()-Z
+
+12 tGravityAcc-std()-X
+
+13 tGravityAcc-std()-Y
+
+14 tGravityAcc-std()-Z
+
+15 tBodyAccJerk-mean()-X
+
+16 tBodyAccJerk-mean()-Y
+
+17 tBodyAccJerk-mean()-Z
+
+18 tBodyAccJerk-std()-X
+
+19 tBodyAccJerk-std()-Y
+
+20 tBodyAccJerk-std()-Z
+
+21 tBodyGyro-mean()-X
+
+22 tBodyGyro-mean()-Y
+
+23 tBodyGyro-mean()-Z
+
+24 tBodyGyro-std()-X
+
+25 tBodyGyro-std()-Y
+
+26 tBodyGyro-std()-Z
+
+27 tBodyGyroJerk-mean()-X
+
+28 tBodyGyroJerk-mean()-Y
+
+29 tBodyGyroJerk-mean()-Z
+
+30 tBodyGyroJerk-std()-X
+
+31 tBodyGyroJerk-std()-Y
+
+32 tBodyGyroJerk-std()-Z
+
+33 tBodyAccMag-mean()
+
+34 tBodyAccMag-std()
+
+35 tGravityAccMag-mean()
+
+36 tGravityAccMag-std()
+
+37 tBodyAccJerkMag-mean()
+
+38 tBodyAccJerkMag-std()
+
+39 tBodyGyroMag-mean()
+
+40 tBodyGyroMag-std()
+
+41 tBodyGyroJerkMag-mean()
+
+42 tBodyGyroJerkMag-std()
+
+43 fBodyAcc-mean()-X
+
+44 fBodyAcc-mean()-Y
+
+45 fBodyAcc-mean()-Z
+
+46 fBodyAcc-std()-X
+
+47 fBodyAcc-std()-Y
+
+48 fBodyAcc-std()-Z
+
+49 fBodyAccJerk-mean()-X
+
+50 fBodyAccJerk-mean()-Y
+
+51 fBodyAccJerk-mean()-Z
+
+52 fBodyAccJerk-std()-X
+
+53 fBodyAccJerk-std()-Y
+
+54 fBodyAccJerk-std()-Z
+
+55 fBodyGyro-mean()-X
+
+56 fBodyGyro-mean()-Y
+
+57 fBodyGyro-mean()-Z
+
+58 fBodyGyro-std()-X
+
+59 fBodyGyro-std()-Y
+
+60 fBodyGyro-std()-Z
+
+61 fBodyAccMag-mean()
+
+62 fBodyAccMag-std()
+
+63 fBodyBodyAccJerkMag-mean()
+
+64 fBodyBodyAccJerkMag-std()
+
+65 fBodyBodyGyroMag-mean()
+
+66 fBodyBodyGyroMag-std()
+
+67 fBodyBodyGyroJerkMag-mean()
+
+68 fBodyBodyGyroJerkMag-std()
 
 ## Appendix B: Variable names for the data frame at the end of Task 5
 
 From "variablestable-means.txt"
+
 variablename
+
 1 activity
+
 2 subjectID
+
 3 AvgtBodyAcc-mean()-X
+
 4 AvgtBodyAcc-mean()-Y
+
 5 AvgtBodyAcc-mean()-Z
+
 6 AvgtBodyAcc-std()-X
+
 7 AvgtBodyAcc-std()-Y
+
 8 AvgtBodyAcc-std()-Z
+
 9 AvgtGravityAcc-mean()-X
+
 10 AvgtGravityAcc-mean()-Y
+
 11 AvgtGravityAcc-mean()-Z
+
 12 AvgtGravityAcc-std()-X
+
 13 AvgtGravityAcc-std()-Y
+
 14 AvgtGravityAcc-std()-Z
+
 15 AvgtBodyAccJerk-mean()-X
+
 16 AvgtBodyAccJerk-mean()-Y
+
 17 AvgtBodyAccJerk-mean()-Z
+
 18 AvgtBodyAccJerk-std()-X
+
 19 AvgtBodyAccJerk-std()-Y
+
 20 AvgtBodyAccJerk-std()-Z
+
 21 AvgtBodyGyro-mean()-X
+
 22 AvgtBodyGyro-mean()-Y
+
 23 AvgtBodyGyro-mean()-Z
+
 24 AvgtBodyGyro-std()-X
+
 25 AvgtBodyGyro-std()-Y
+
 26 AvgtBodyGyro-std()-Z
+
 27 AvgtBodyGyroJerk-mean()-X
+
 28 AvgtBodyGyroJerk-mean()-Y
+
 29 AvgtBodyGyroJerk-mean()-Z
+
 30 AvgtBodyGyroJerk-std()-X
+
 31 AvgtBodyGyroJerk-std()-Y
+
 32 AvgtBodyGyroJerk-std()-Z
+
 33 AvgtBodyAccMag-mean()
+
 34 AvgtBodyAccMag-std()
+
 35 AvgtGravityAccMag-mean()
+
 36 AvgtGravityAccMag-std()
+
 37 AvgtBodyAccJerkMag-mean()
+
 38 AvgtBodyAccJerkMag-std()
+
 39 AvgtBodyGyroMag-mean()
+
 40 AvgtBodyGyroMag-std()
+
 41 AvgtBodyGyroJerkMag-mean()
+
 42 AvgtBodyGyroJerkMag-std()
+
 43 AvgfBodyAcc-mean()-X
+
 44 AvgfBodyAcc-mean()-Y
+
 45 AvgfBodyAcc-mean()-Z
+
 46 AvgfBodyAcc-std()-X
+
 47 AvgfBodyAcc-std()-Y
+
 48 AvgfBodyAcc-std()-Z
+
 49 AvgfBodyAccJerk-mean()-X
+
 50 AvgfBodyAccJerk-mean()-Y
+
 51 AvgfBodyAccJerk-mean()-Z
+
 52 AvgfBodyAccJerk-std()-X
+
 53 AvgfBodyAccJerk-std()-Y
+
 54 AvgfBodyAccJerk-std()-Z
+
 55 AvgfBodyGyro-mean()-X
+
 56 AvgfBodyGyro-mean()-Y
+
 57 AvgfBodyGyro-mean()-Z
+
 58 AvgfBodyGyro-std()-X
+
 59 AvgfBodyGyro-std()-Y
+
 60 AvgfBodyGyro-std()-Z
+
 61 AvgfBodyAccMag-mean()
+
 62 AvgfBodyAccMag-std()
+
 63 AvgfBodyBodyAccJerkMag-mean()
+
 64 AvgfBodyBodyAccJerkMag-std()
+
 65 AvgfBodyBodyGyroMag-mean()
+
 66 AvgfBodyBodyGyroMag-std()
+
 67 AvgfBodyBodyGyroJerkMag-mean()
+
 68 AvgfBodyBodyGyroJerkMag-std()
 
